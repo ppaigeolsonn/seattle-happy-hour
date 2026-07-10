@@ -12,9 +12,9 @@ export default function NavBar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-10 border-b border-neutral-200 bg-white/90 backdrop-blur">
+    <header className="sticky top-0 z-10 border-b border-neutral-200 bg-warm-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <Link href="/" className="font-semibold text-orange-600">
+        <Link href="/" className="font-semibold text-teal">
           Happy Hour in the 206
         </Link>
         <nav className="flex gap-1">
@@ -26,8 +26,8 @@ export default function NavBar() {
                 href={link.href}
                 className={`rounded-md px-3 py-1.5 text-sm font-medium transition-colors ${
                   isActive
-                    ? "bg-orange-100 text-orange-700"
-                    : "text-neutral-600 hover:bg-neutral-100"
+                    ? "bg-teal/15 text-teal"
+                    : "text-charcoal hover:bg-neutral-100"
                 }`}
               >
                 {link.label}

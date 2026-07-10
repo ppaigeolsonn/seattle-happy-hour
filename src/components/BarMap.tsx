@@ -9,7 +9,7 @@ import { Bar } from "@/types/bar";
 // Simple circle marker instead of Leaflet's default pin icon.
 const markerIcon = L.divIcon({
   className: "bar-marker",
-  html: '<span style="display:block;width:14px;height:14px;border-radius:9999px;background:#ea580c;border:2px solid white;box-shadow:0 1px 3px rgba(0,0,0,0.4);"></span>',
+  html: '<span style="display:block;width:14px;height:14px;border-radius:9999px;background:#f2765b;border:2px solid #fefbf6;box-shadow:0 1px 3px rgba(0,0,0,0.4);"></span>',
   iconSize: [14, 14],
   iconAnchor: [7, 7],
   popupAnchor: [0, -7],
@@ -43,11 +43,11 @@ export default function BarMap({ bars }: { bars: Bar[] }) {
         >
           <Popup>
             <div className="text-sm">
-              <p className="font-semibold text-neutral-900">{bar.name}</p>
+              <p className="font-semibold text-charcoal">{bar.name}</p>
               <p className="text-neutral-500">{bar.neighborhood}</p>
               <Link
                 href={`/bars/${bar.id}`}
-                className="mt-1 inline-block font-medium text-orange-600 hover:underline"
+                className="mt-1 inline-block font-medium text-coral hover:underline"
               >
                 View details →
               </Link>

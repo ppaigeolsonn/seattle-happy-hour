@@ -18,8 +18,8 @@ export default function MapPage() {
 
   return (
     <main className="mx-auto w-full max-w-6xl px-4 py-10">
-      <h1 className="text-3xl font-bold text-orange-600">Map</h1>
-      <p className="mt-2 text-neutral-600">
+      <h1 className="text-3xl font-bold text-teal">Map</h1>
+      <p className="mt-2 text-charcoal">
         {pinnedCount} of {activeBars.length} bars pinned.
       </p>
 

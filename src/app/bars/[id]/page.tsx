@@ -39,7 +39,7 @@ export default async function BarDetailPage({
     <main className="mx-auto w-full max-w-2xl px-4 py-10">
       <Link
         href="/"
-        className="text-sm font-medium text-orange-600 hover:underline"
+        className="text-sm font-medium text-coral hover:underline"
       >
         ← All bars
       </Link>
@@ -59,7 +59,7 @@ export default async function BarDetailPage({
         )}
       </div>
 
-      <h1 className="mt-4 text-3xl font-bold text-neutral-900">{bar.name}</h1>
+      <h1 className="mt-4 text-3xl font-bold text-charcoal">{bar.name}</h1>
       <p className="mt-1 text-neutral-500">{bar.neighborhood}</p>
       <p className="mt-1 text-neutral-500">{bar.address}</p>
 
@@ -69,7 +69,7 @@ export default async function BarDetailPage({
             href={bar.website}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium text-orange-600 hover:underline"
+            className="text-sm font-medium text-coral hover:underline"
           >
             Visit website ↗
           </a>
@@ -79,7 +79,7 @@ export default async function BarDetailPage({
             href={bar.googleMapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium text-orange-600 hover:underline"
+            className="text-sm font-medium text-coral hover:underline"
           >
             View on Google Maps ↗
           </a>
@@ -93,7 +93,7 @@ export default async function BarDetailPage({
         {bar.happyHours.length > 0 ? (
           <ul className="mt-2 space-y-1">
             {bar.happyHours.map((window, i) => (
-              <li key={i} className="text-neutral-700">
+              <li key={i} className="text-charcoal">
                 <span className="font-medium">{window.days.join(", ")}:</span>{" "}
                 {formatTime(window.startTime)}–{formatTime(window.endTime)}
               </li>
