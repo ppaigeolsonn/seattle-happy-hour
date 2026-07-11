@@ -49,8 +49,10 @@ export const bars: Bar[] = [
     ],
     category: "Cocktail Bar",
     verifiedHappyHour: "Yes",
+    lastVerified: "July 11, 2026",
     rating: "4.6 (Google)",
-    website: "https://canonseattle.com",
+    website: "https://www.canonseattle.com/",
+    photoUrl: "/bars/canon.webp",
     googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Canon+928+12th+Ave+Seattle",
   },
   {
@@ -58,7 +60,7 @@ export const bars: Bar[] = [
     active: true,
     name: "Sugar Hill",
     neighborhood: "Capitol Hill",
-    address: "Capitol Hill, Seattle, WA",
+    address: "414 East Pine Street, Seattle, WA 98122",
     location: { lat: 47.6146, lng: -122.3273 },
     happyHours: [
       {
@@ -80,7 +82,10 @@ export const bars: Bar[] = [
     ],
     category: "Restaurant (Thai)",
     verifiedHappyHour: "Yes",
+    lastVerified: "July 11, 2026",
     rating: "4.4 (Yelp)",
+    website: "https://www.sugarhillseattle.com/",
+    photoUrl: "/bars/sugar-hill.jpg",
     googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Sugar+Hill+Capitol+Hill+Seattle",
   },
   {
@@ -92,28 +97,33 @@ export const bars: Bar[] = [
     location: { lat: 47.6149, lng: -122.3195 },
     happyHours: [
       {
-        days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        startTime: "15:00",
-        endTime: "17:00",
+        days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        startTime: "16:00",
+        endTime: "18:00",
       }
     ],
-    happyHoursText: "3:00 PM–5:00 PM",
+    happyHoursText: "Fancy Hour: 4:00 PM–6:00 PM",
     deals: [
       {
         category: "drink",
-        description: "Discounted espresso martini, Hemingway daiquiri",
+        description: "Fancy Hour cocktails at happy hour prices",
       },
       {
         category: "food",
-        description: "Petite Moules Frites (58% off), Petite Steak Au Poivre (53% off)",
+        description: "Fancy Hour snacks at happy hour prices",
+      },
+      {
+        category: "drink",
+        description: "Half off bottles of wine (Wednesday)",
       }
     ],
     category: "Restaurant (American)",
     verifiedHappyHour: "Yes",
+    lastVerified: "July 11, 2026",
     rating: "4.2 (Yelp)",
     website: "https://oddfellowscafe.com",
     googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Oddfellows+Cafe+1525+10th+Ave+Seattle",
-    photoUrl: "http://static1.squarespace.com/static/662ef7f46bed720b04a9ace5/t/66a057b4ff07d0521a7df5e1/1721784244684/OddfellowsLogo-01+%281%29.png?format=1500w",
+    photoUrl: "/bars/oddfellows-cafe-bar.webp",
   },
   {
     id: "liberty",

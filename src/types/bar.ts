@@ -62,6 +62,12 @@ export interface Bar {
   photoUrl?: string;
   /** Raw verification status from the source, e.g. "Yes", "Partial", "Yes (food)". */
   verifiedHappyHour?: string;
+  /**
+   * Date this specific bar's info was last individually confirmed, e.g.
+   * "July 11, 2026". Omitted until someone has explicitly re-checked this
+   * bar — falls back to the dataset-wide DATA_LAST_VERIFIED date until then.
+   */
+  lastVerified?: string;
   /** Raw rating + source, e.g. "4.6 (Google)". */
   rating?: string;
 }

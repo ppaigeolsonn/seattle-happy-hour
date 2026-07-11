@@ -63,7 +63,7 @@ export default async function BarDetailPage({
       <p className="mt-1 text-neutral-500">{bar.neighborhood}</p>
       <p className="mt-1 text-neutral-500">{bar.address}</p>
       <p className="mt-1 text-sm text-neutral-400">
-        Last Verified: {DATA_LAST_VERIFIED}
+        Last Verified: {bar.lastVerified ?? DATA_LAST_VERIFIED}
       </p>
 
       <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2">

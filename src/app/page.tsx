@@ -84,7 +84,7 @@ function BarCard({ bar }: { bar: Bar }) {
 
         <p className="mt-3 truncate text-xs text-neutral-400">{bar.address}</p>
         <p className="mt-1 truncate text-xs text-neutral-400">
-          Last Verified: {DATA_LAST_VERIFIED}
+          Last Verified: {bar.lastVerified ?? DATA_LAST_VERIFIED}
         </p>
       </div>
     </Link>
