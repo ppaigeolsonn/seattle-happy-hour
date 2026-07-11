@@ -29,7 +29,7 @@ export default function BarMap({ bars }: { bars: Bar[] }) {
       zoom={12}
       scrollWheelZoom={true}
       style={{ height: "70vh", width: "100%" }}
-      className="rounded-2xl"
+      className="golden-hour-map rounded-2xl"
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

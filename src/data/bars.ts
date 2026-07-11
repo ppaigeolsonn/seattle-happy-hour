@@ -1,5 +1,10 @@
 import { Bar } from "@/types/bar";
 
+// Date this dataset (hours, deals, addresses, coordinates) was last compiled
+// from its sources. Shared across every bar — we don't have a distinct
+// verification date per restaurant, only per-dataset.
+export const DATA_LAST_VERIFIED = "July 8, 2026";
+
 // Sourced from seattle_happy_hours_1.xlsx (105 listings: Capitol Hill, Ballard,
 // Fremont, Belltown, Georgetown, Wallingford). priceRange is omitted throughout
 // (not in the source; optional on Bar). `location` lat/lng comes from HHLat.md

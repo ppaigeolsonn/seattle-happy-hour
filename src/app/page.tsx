@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { bars } from "@/data/bars";
+import { bars, DATA_LAST_VERIFIED } from "@/data/bars";
 import { getTodayName, isHappyHourNow } from "@/lib/happyHour";
 import { formatTime } from "@/lib/format";
 import { DealRow } from "@/components/DealRow";
@@ -83,6 +83,9 @@ function BarCard({ bar }: { bar: Bar }) {
         </ul>
 
         <p className="mt-3 truncate text-xs text-neutral-400">{bar.address}</p>
+        <p className="mt-1 truncate text-xs text-neutral-400">
+          Last Verified: {DATA_LAST_VERIFIED}
+        </p>
       </div>
     </Link>
   );

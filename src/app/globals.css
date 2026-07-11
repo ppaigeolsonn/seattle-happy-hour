@@ -31,3 +31,34 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Golden Hour on the Sound: warm-tint the map tiles and restyle Leaflet's
+   default chrome (zoom buttons, attribution, popups) to match the palette. */
+.golden-hour-map .leaflet-tile-pane {
+  filter: saturate(0.7) sepia(0.2) hue-rotate(-10deg) brightness(1.03);
+}
+
+.golden-hour-map .leaflet-control-zoom a {
+  background: var(--color-warm-white);
+  color: var(--color-charcoal);
+}
+
+.golden-hour-map .leaflet-control-zoom a:hover {
+  background: var(--color-teal);
+  color: var(--color-warm-white);
+}
+
+.golden-hour-map .leaflet-control-attribution {
+  background: rgba(254, 251, 246, 0.9);
+  color: var(--color-charcoal);
+}
+
+.golden-hour-map .leaflet-control-attribution a {
+  color: var(--color-teal);
+}
+
+.golden-hour-map .leaflet-popup-content-wrapper,
+.golden-hour-map .leaflet-popup-tip {
+  background: var(--color-warm-white);
+  color: var(--color-charcoal);
+}

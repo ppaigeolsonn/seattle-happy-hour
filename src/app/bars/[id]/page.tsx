@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { bars } from "@/data/bars";
+import { bars, DATA_LAST_VERIFIED } from "@/data/bars";
 import { formatTime } from "@/lib/format";
 import { DealRow } from "@/components/DealRow";
 
@@ -62,6 +62,9 @@ export default async function BarDetailPage({
       <h1 className="mt-4 text-3xl font-bold text-charcoal">{bar.name}</h1>
       <p className="mt-1 text-neutral-500">{bar.neighborhood}</p>
       <p className="mt-1 text-neutral-500">{bar.address}</p>
+      <p className="mt-1 text-sm text-neutral-400">
+        Last Verified: {DATA_LAST_VERIFIED}
+      </p>
 
       <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
         {bar.website && (
