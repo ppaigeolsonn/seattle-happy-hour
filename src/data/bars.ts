@@ -157,8 +157,10 @@ export const bars: Bar[] = [
     ],
     category: "Cocktail Bar / Sushi",
     verifiedHappyHour: "Yes",
+    lastVerified: "July 11, 2026",
     rating: "4.5 (Yelp)",
-    website: "https://libertybars.com",
+    website: "https://libertybarseattle.com/",
+    photoUrl: "/bars/liberty.jpg",
     googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Liberty+517+15th+Ave+E+Seattle",
   },
   {
@@ -171,23 +173,62 @@ export const bars: Bar[] = [
     happyHours: [
       {
         days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        startTime: "07:00",
+        endTime: "08:00",
+      },
+      {
+        days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         startTime: "15:00",
         endTime: "18:00",
       }
     ],
-    happyHoursText: "3:00 PM–6:00 PM",
+    happyHoursText: "Mon-Fri 7:00 AM–8:00 AM; Mon-Fri 3:00 PM–6:00 PM; Sun-Wed 10:00 PM–close; Thu-Sat 12:00 AM–close",
     deals: [
       {
         category: "drink",
-        description: "Strong drink deals",
+        description: "Morning: ½ off Bloody Marys and mimosas",
+      },
+      {
+        category: "drink",
+        description: "Morning: $2 drafts and well drinks",
+        price: 2,
+      },
+      {
+        category: "drink",
+        description: "Morning: $5 drink special",
+        price: 5,
+      },
+      {
+        category: "drink",
+        description: "Morning: $4 Aperol spritz jello shot",
+        price: 4,
       },
       {
         category: "food",
-        description: "Strong food deals (24-hr diner)",
+        description: "Morning: $4.99 and $5.99 food deals",
+      },
+      {
+        category: "drink",
+        description: "Evening: $2 off drafts and well drinks",
+      },
+      {
+        category: "drink",
+        description: "Evening: $5 Cabernet or Pinot Grigio",
+        price: 5,
+      },
+      {
+        category: "drink",
+        description: "Evening: $5 drink deal",
+        price: 5,
+      },
+      {
+        category: "food",
+        description: "Evening: $3.99, $4.99, $6.99 food deals",
       }
     ],
     category: "Diner/Bar",
     verifiedHappyHour: "Yes",
+    lastVerified: "July 11, 2026",
     rating: "4.2 (Yelp)",
     website: "https://lostlakecafe.com",
     googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Lost+Lake+Cafe+Seattle",
@@ -198,7 +239,7 @@ export const bars: Bar[] = [
     active: true,
     name: "Herb & Bitter Public House",
     neighborhood: "Capitol Hill",
-    address: "819 E Pike St, Seattle, WA 98122",
+    address: "516 Broadway E, Seattle, WA 98102",
     location: { lat: 47.6137, lng: -122.3185 },
     happyHours: [
       {
@@ -207,20 +248,27 @@ export const bars: Bar[] = [
         endTime: "17:00",
       }
     ],
-    happyHoursText: "4:00 PM–5:00 PM; 9:00 PM–close",
+    happyHoursText: "Wed-Sun 4:00 PM–5:00 PM; Wed-Sun 9:00 PM–close",
     deals: [
       {
         category: "drink",
-        description: "50% off 42 drinks",
+        description: "4-5pm: 50% off all drinks",
       },
       {
         category: "food",
-        description: "25% off 21 food items",
+        description: "4-5pm: 25% off all food",
+      },
+      {
+        category: "drink",
+        description: "9pm-close: 50% off all drinks",
       }
     ],
     category: "Bar",
     verifiedHappyHour: "Yes",
+    lastVerified: "July 11, 2026",
     rating: "4.5 (Yelp)",
+    website: "https://www.herbandbitter.com/",
+    photoUrl: "/bars/herb-bitter-public-house.jpg",
     googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Herb+and+Bitter+Public+House+Seattle",
   },
   {
